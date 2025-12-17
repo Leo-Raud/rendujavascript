@@ -2,16 +2,81 @@
     margin: 0;
 }
 
+#hero {
+    display: flex;
+    align-items: center;
+    height: 430px;
+    text-align: center;
+
+    div {
+        display: flex;
+        height: 200px;
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+#why {
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    text-align: center;
+    flex-direction: column;
+
+    h2 {
+        padding-block: 10px;
+    }
+}
+
+#salles {
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    text-align: center;
+    flex-direction: column;
+
+    h2 {
+        padding-block: 50px;
+    }
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    margin-inline: 25px;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 250px;
+
+    h3 {
+        padding-block: 10px;
+    }
+}
+
 .navbtn {
     text-decoration: none;
     color: black;
     padding-inline: 10px;
 }
 
+.btnaction {
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
 
-
-
-
+.service_container {
+    display: flex;
+    flex-direction: column;
+}
 
 
 

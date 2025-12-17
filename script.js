@@ -16,7 +16,7 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
         herotitle.textContent = data.phraseAccroche;
         //      -faire un Paragraphe qui montre le "texteAppelAction"
         let herodesc = document.getElementById("action");
-        herodesc.textContent = data.texteAppelAction;
+        herodesc.textContent = `${data.texteAppelAction} !`;
         //      -Faire deux bouttons l'un pour découvrir (amène à la liste des salles)
         //       et l'autre qui est pour payer mais sert à rien
         //  Etape 4 :
@@ -30,6 +30,7 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
 
             let card = document.createElement("div");
             listeservice.appendChild(card);
+            card.className = "card";
 
             let titrecard = document.createElement("h3");
             titrecard.textContent = `Avantage ${i}`;
@@ -47,6 +48,7 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
             //      -La carte de salle doit faire apparaitre :
             let card = document.createElement("div");
             listesalle.appendChild(card);
+            card.className = "card";
             //          -une image de la salle avec "data.activities.image-url"
             let imagesalle = document.createElement("img")
             imagesalle.src = salle["image-url"];
@@ -68,6 +70,7 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
             //      -Faire un for eache sur "data.temoignages" :
             let card = document.createElement("div");
             listeretour.appendChild(card);
+            card.className = "card";
             //      - pour chaque carte mettre :
             //          -la note avec "data.temoignages.note"/5
             let note = document.createElement("p")
