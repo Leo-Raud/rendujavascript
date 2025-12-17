@@ -4,8 +4,6 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
     .then(data => {
         //  Pour le header :
         //      -mettre tout d'abord le nom de l'entreprise avec "data.nomCommercial"
-        let logo = document.getElementById("nameetp");
-        logo.textContent = data.nomCommercial;
         //      -Faire la nav (sur html où chaque boutton amène à une partie de la page)
         //      -Faire un boutton appeller qui sert à rien
 
@@ -85,7 +83,7 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
             com.textContent = retour.commentaire;
             card.appendChild(com);
             //          -le nom de la salle avec "data.temoignages.Prenom"
-            let prenom = document.createElement("p")
+            let prenom = document.createElement("h4")
             prenom.textContent = retour.prenom;
             card.appendChild(prenom);
         });
